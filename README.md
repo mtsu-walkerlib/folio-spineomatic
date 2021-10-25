@@ -27,7 +27,13 @@ Additionally, call numbers may be extended with the following fields from FOLIO:
     1. Click the **Alma Access** tab.
     2. Enter the https:// followed by the domain name or IP address of the web server in the **ALMA URL** field.
     3. Enter /**path to scripts**/item.php?item_barcode={item_barcode} in the **Method** field.
+
+![SpineOMatic ALMA Access Configuration](/resources/som_alma_access.jpg)
+
 6. Configure SpineOMatic call number formats.
+
+![SpineOMatic Call Number Format Configuration](/resources/som_call_number_format.jpg)
+
 7. Scan and print.
 
 ## Extended Call Numbers
@@ -42,3 +48,6 @@ The **Formatted (Extended) Call Numbers** section of the config.php file allows 
 Walker Library uses this feature with SpineOMatic's option to include breaks before characters in order to include item volume and copy numbers in spine labels.
 
 {{item_call_number}}{ v.{item_volume}}{ c.{item_copy_number>1}}
+
+![SpineOMatic Call Number Format Tweak and Test Configuration](/resources/som_call_number_format_break.jpg)
+
