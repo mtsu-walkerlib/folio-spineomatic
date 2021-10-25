@@ -1,0 +1,8 @@
+Options -Indexes
+
+<Files "config.php">
+  Require all denied
+</Files>
+<Files "cache.json">
+  Require all denied
+</Files>
