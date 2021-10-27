@@ -174,7 +174,7 @@ function format_call_number($item_som_call_number_type, $item_fields) {
 
 
   // Store matches of formatted (extended) call number curly bracket syntax.
-  if (preg_match_all('/\{[^{]*\{\w+([<>=]?[^}]*)\}[^{]*\}/', $format, $field_pattern_matches) !== 1) {
+  if (preg_match_all('/\{[^{]*\{\w+([<>=]?[^}]*)\}[^{]*\}/', $format, $field_pattern_matches) > 0) {
 
     // Iterate through pattern match.
     foreach ($field_pattern_matches[0] as $field_pattern_match_index => $field_pattern_match) {
@@ -246,7 +246,7 @@ function format_call_number($item_som_call_number_type, $item_fields) {
                   if ( ($numeric_filter_number1_int === $numeric_filter_number2_int) && ($field_value_number1_int !== $numeric_filter_number1_int ) ) {
                     $field_filtered = false;
                   }
-                  
+
                 }
               }
             }
